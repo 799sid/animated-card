@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @font-face {
     font-family: Monument;
-    src: url(./fonts/MonumentExtended-Black.ttf);
+    src: url(./Monument-Black.ttf);
 }
 
 body {
@@ -48,8 +48,6 @@ body {
 .sizes {
     margin-top: 40px;
 }
-
-
 
 .price {
     font-family: Monument, sans-serif;
