@@ -1,5 +1,6 @@
 const card = document.querySelector('.card');
 const container = document.querySelector('.container');
+let sizes = document.querySelectorAll(".btn");
 
 container.addEventListener("mousemove", (e) => {
     let xAxis = (window.innerWidth / 2 - e.pageX) / 15;
@@ -13,6 +14,15 @@ container.addEventListener("mouseleave", (e) => {
 });
 
 container.addEventListener("mouseenter", (e) => {
-    card.style.transition = "ease 0.1s";
-    console.log('ahaha');
+    card.style.transition = "ease 0.5s";
+});
+
+function onClick(e) {
+    activeButton = document.getElementById(e.id);
+    activeButton.style.backgroundColor = "#000";
+    activeButton.style.color = "#fff";
+}
+
+sizes.forEach(e => {
+    e.addEventListener("click", onClick);
 });
